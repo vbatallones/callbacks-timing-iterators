@@ -82,16 +82,47 @@
 // }
 // setTimeout(blastOff, 5000)
 
-function printName(name) {
-    console.log('Levin');
-}
-setTimeout(printName, 5000);
+// function printName(name) {
+//     console.log('Levin');
+// }
+// setTimeout(printName, 5000);
 
 
-function myName(name) {
-   console.log(name);
-}
-let myNameTwo = 'Levin'
-setTimeout(function() {
-    myName(myNameTwo)
-}, 5000);
+// function myName(name) {
+//    console.log(name);
+// }
+// let myNameTwo = 'Levin'
+// setTimeout(function() {
+//     myName(myNameTwo)
+// }, 5000);
+
+// const collectables = ['Bomag', 'CMI corp', 'Wirtgen', 'Caterpillar'];
+// collectables.forEach(function(element){
+//     console.log(element);
+// });
+
+// collectables.forEach(element => {
+//     console.log(element);
+// });
+
+// collectables.forEach(element => {
+//     if (element.length > 6) {
+//         console.log(element);
+//     }
+// });
+
+const someNumbers = [24, 65, 347, 34];
+
+// const addFive = someNumbers.map(element => {
+//     return element + 5;
+// });
+
+// console.log(addFive);
+
+const filterNumbers = someNumbers.filter(element => {
+    if(element > 50) {
+        return element;
+    }
+});
+
+console.log(filterNumbers)
