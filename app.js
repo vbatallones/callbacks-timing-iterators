@@ -36,21 +36,38 @@
 
 // printArray(numberArray, printArrayAgain);
 
-function calculator (num1, num2, callbackOne, callbackTwo) {
-    let result = callbackOne(num1, num2) + callbackTwo(num1, num2);
+// function calculator (num1, num2, callbackOne, callbackTwo) {
+//     let result = callbackOne(num1, num2) + callbackTwo(num1, num2);
 
-    return result;
-}
+//     return result;
+// }
 
-function addNumbers(num1, num2) {
+// function addNumbers(num1, num2) {
   
-    let result = num1 + num2; 
+//     let result = num1 + num2; 
+//     return result;
+// }
+
+// function subtractNumbers(num1, num2) {
+//     let result = num1 - num2;
+//     return result;
+// }
+
+// console.log(calculator(5,77, addNumbers, subtractNumbers));
+
+function superHero (callbackOne, callbackTwo) {
+    let result =  callbackOne() + 'and' + callbackTwo()
     return result;
+} 
+
+function superPowers () {
+    let sentence = " I can jump 1000ft ";
+    return sentence;
 }
 
-function subtractNumbers(num1, num2) {
-    let result = num1 - num2;
-    return result;
+function superPowersTwo () {
+    let sentence = " I can side step quickly";
+    return sentence;
 }
 
-console.log(calculator(5,77, addNumbers, subtractNumbers));
+console.log(superHero(superPowers, superPowersTwo));
